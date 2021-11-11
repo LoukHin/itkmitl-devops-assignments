@@ -23,14 +23,14 @@ services:
   details:
     build: ./details
     container_name: details
-    image: ghcr.io/loukhin/itkmitl-bookinfo-details:dev
+    image: ghcr.io/loukhin/bookinfo-details:dev
     ports:
       - "8081:9080"
 
   reviews:
     build: ./reviews
     container_name: reviews
-    image: ghcr.io/loukhin/itkmitl-bookinfo-reviews:dev
+    image: ghcr.io/loukhin/bookinfo-reviews:dev
     ports:
       - "8082:9080"
     environment:
@@ -40,7 +40,7 @@ services:
   productpage:
     build: ./productpage
     container_name: productpage
-    image: ghcr.io/loukhin/itkmitl-bookinfo-productpage:dev
+    image: ghcr.io/loukhin/bookinfo-productpage:dev
     ports:
       - "8083:9080"
     environment:
